@@ -2,233 +2,7 @@
 <html>
   <head>
     <title>AR-APSIT.ai</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #14213d;
-        color: white;
-      }
-
-      header {
-        padding: 0px;
-        height: 80px;
-        background-color: #14213d;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-style: solid;
-        border-color: white;
-        border-width: 1px;
-      }
-
-      .logo {
-        display: flex;
-        align-items: center;
-        font-size: 30px;
-      }
-
-      .logo img {
-        margin-left: 20px;
-        width: 50px;
-      }
-
-      .nav {
-        display: flex;
-        gap: 50px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      .nav li {
-        position: relative;
-        list-style-type: none;
-      }
-
-      .nav li a {
-        text-decoration: none;
-        color: white;
-      }
-
-      .nav li a:hover {
-        color: #f0b90b;
-      }
-
-      .nav li ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 10px;
-        border-radius: 5px;
-        width: 150px;
-        text-align: center;
-      }
-
-      .nav li:hover ul {
-        display: block;
-      }
-
-      .nav li ul li {
-        background-color: white;
-        padding: 15px;
-      }
-
-      .nav li ul li a {
-        color: black;
-      }
-
-      .nav li ul li a:hover {
-        color: #f0b90b;
-      }
-
-      .section1 {
-        padding: 100px 0;
-        text-align: center;
-      }
-
-      .section1 h1 {
-        font-size: 48px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-
-      .section1 p {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 30px;
-      }
-
-      .button {
-        display: inline-block;
-        padding: 15px 30px;
-        background-color: #f0b90b;
-        color: #14213d;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-
-      .button:hover {
-        background-color: #ffc107;
-      }
-
-      .section2 {
-        text-align: center;
-        padding: 50px 0;
-        border: none;
-      }
-
-      .section2 h2 {
-        font-size: 36px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-
-      .section2 p {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 30px;
-      }
-
-      .features {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-      }
-
-      .feature {
-        text-align: center;
-      }
-
-      .feature img {
-        width: 100px;
-        margin-bottom: 20px;
-      }
-
-      .feature h3 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-
-      .feature p {
-        font-size: 16px;
-        line-height: 1.5;
-      }
-
-      .footer {
-        padding: 30px 0;
-        background-color: #14213d;
-        text-align: center;
-      }
-
-      .footer p {
-        color: #778da9;
-      }
-
-      #login {
-        background-color: white;
-        color: black;
-        border: 2px solid white;
-        border-radius: 10px;
-        padding: 5px;
-        margin-right: 10px;
-      }
-
-      .feature1 {
-        text-align: center;
-        border: 2px solid white;
-        border-radius: 30px;
-      }
-
-      .feature2 {
-        text-align: center;
-        border: 2px solid white;
-        border-radius: 30px;
-      }
-
-      .feature3 {
-        text-align: center;
-        border: 2px solid white;
-        border-radius: 30px;
-      }
-
-      .section3 {
-        display: flex;
-        margin-top: 150px;
-      }
-
-      .section3 img {
-        margin-left: 180px;
-        border-radius: 10px;
-      }
-
-      .section3 div {
-        position: relative;
-        font-size: 25px;
-        margin-left: 80px;
-        margin-top: 100px;
-      }
-
-      .chatbot {
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-        width: 100px;
-        height: 100px;
-        text-align: center;
-      }
-
-      .chatbot img {
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -240,14 +14,24 @@
       <nav>
         <ul class="nav">
           <li>
-            <a href="#">Solutions &darr;</a>
+            <a href="#">
+              Solutions
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 15l-8-8h16z" />
+              </svg>
+            </a>
             <ul>
               <li><a href="#">Overview</a></li>
               <li><a href="#">IndoorMaps</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">Resources &or;</a>
+            <a href="#">
+              Resources
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 15l-8-8h16z" />
+              </svg>
+            </a>
             <ul>
               <li><a href="#">FAQ</a></li>
               <li><a href="#">Community</a></li>
@@ -292,19 +76,91 @@
       </div>
     </section>
 
-    <section class="chatbot">
-      <img src="chatbot.png" alt="chatbot" />
-    </section>
-
-    <section class="section3">
-      <img src="demo.png" alt="demo" width="600" height="500" />
-      <div>
-        <h1>Develop Smarter, Not Harder</h1>
+    <section class="chatbot" onclick="toggleChatbot()">
+        <img src="chatbot.png" alt="chatbot" />
+      </section>
+  
+      <div class="chatbox" id="chatbox">
+        <div class="chatbox-header">Chat with us!</div>
+        <div class="chatbox-messages" id="chatbox-messages"></div>
+        <div class="chatbox-input">
+          <input type="text" id="chatbox-input" placeholder="Type a message..." />
+          <button onclick="sendMessage()">Send</button>
+        </div>
       </div>
-    </section>
+  
+      <section class="section3">
+        <img src="demo.png" alt="demo" width="600" height="500" />
+        <div>
+          <h1>Develop Smarter, Not Harder</h1>
+        </div>
+      </section>
+  
+      <footer class="footer">
+        <p>&copy; 2024 AR-APSIT.ai All rights reserved.</p>
+      </footer>
 
-    <footer class="footer">
-      <p>&copy; 2024 AR-APSIT.ai All rights reserved.</p>
-    </footer>
-  </body>
-</html>
+      <script>
+        function toggleChatbot() {
+          const chatbox = document.getElementById("chatbox");
+          chatbox.style.display = chatbox.style.display === "none" ? "flex" : "none";
+        }
+      
+        function getResponse(userMessage) {
+          const responses = {
+            "hi": "Hello! How can I help you today?",
+            "how are you": "I'm just a bot, but I'm doing well. How about you?",
+            "what is your name": "I'm a chatbot. I don't have a name, but you can call me Chatbot.",
+            "start navigation": "To start navigation, please enter your current location and your destination.",
+            "nearest restrooms": "Sure! Please allow me access to your current location, and I'll show you the nearest restrooms.",
+            "find the main entrance": "The main entrance is marked with a large blue arrow in the AR view. Just follow the arrow to reach the main entrance.",
+            "landmarks near me": "I can help with that! Let me access your location to show nearby landmarks on your AR view.",
+            "time to reach my destination": "Based on your current location and the destination, it should take approximately 10 minutes on foot.",
+            "shortcut to the library": "Yes, there is a shortcut. Follow the highlighted path in your AR view to take the quickest route to the library.",
+            "way to the cafeteria": "Sure! Follow the green path in your AR view to reach the cafeteria.",
+            "help finding the conference room": "No problem! Just enter the name or number of the conference room, and I will guide you there.",
+            "find a charging station": "There are charging stations located throughout the building. Let me show them in your AR view.",
+            "is there an elevator nearby": "Yes, there's an elevator close to you. Follow the yellow path in your AR view to reach it.",
+            "bye": "Goodbye! Have a great day!"
+          };
+      
+          return responses[userMessage.toLowerCase()] || "Sorry, I don't understand that. Can you please rephrase?";
+        }
+      
+        function sendMessage() {
+          const input = document.getElementById("chatbox-input");
+          const messages = document.getElementById("chatbox-messages");
+          const userMessage = input.value.trim();
+      
+          if (userMessage !== "") {
+            
+            const userMessageElement = document.createElement("div");
+            userMessageElement.textContent = "You: " + userMessage;
+            messages.appendChild(userMessageElement);
+      
+            
+            input.value = "";
+      
+            
+            const botMessage = getResponse(userMessage);
+      
+            
+            const botMessageElement = document.createElement("div");
+            botMessageElement.textContent = "Bot: " + botMessage;
+            messages.appendChild(botMessageElement);
+      
+            
+            messages.scrollTop = messages.scrollHeight;
+    
+            if (userMessage.toLowerCase() === 'bye') {
+              setTimeout(() => {
+                toggleChatbot(); 
+              }, 1000);
+            }
+          }
+        }
+      </script>
+      
+    </body>
+  </html>
+  
