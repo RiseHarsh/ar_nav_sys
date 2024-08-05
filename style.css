@@ -268,3 +268,9 @@ header {
 .chatbox-input button:hover {
   background-color: #f0b90b;
 }
+
+.question{
+  background-color: grey;
+  margin: -6px;
+  padding: 8px;
+}
