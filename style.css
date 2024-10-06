@@ -7,14 +7,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  transition: background-color 0.3s ease;
-} */
 header {
   padding: 0;
   height: 80px;
@@ -696,7 +688,7 @@ textarea {
   }
   #chatbot-container {
     width: 25%; /* Standard width for desktop */
-    height: 75%; /* Larger height for visibility */
+    height: 77%; /* Larger height for visibility */
     bottom: 30px; /* Positioned slightly above bottom edge */
     right: 30px; /* Comfortable position from right */
     border-radius: 10px; /* Subtle rounded corners */
@@ -705,7 +697,40 @@ textarea {
     position: relative;
     justify-content: end;
     height: 36px;
-    bottom: -115px;
+    bottom: -102px;
+  }
+  #send-btn{
+    padding: 5px 20px;
+  }
+  #chatbot-toggler {
+    bottom: 30px; /* Positioned slightly above bottom edge */
+    right: 40px; /* Positioned a bit off from the right */
+    width: 60px; /* Standard size button for desktop */
+    height: 60px;
+  }
+}
+@media (min-width: 1300px) {
+  .section2 h2{
+    font-size: 30px;
+  }
+  .chat-header{
+    border-radius: 9px 9px 0  0;
+  }
+  .chat-body{
+    height: 180px;
+  }
+  #chatbot-container {
+    width: 25%; /* Standard width for desktop */
+    height: 77%; /* Larger height for visibility */
+    bottom: 30px; /* Positioned slightly above bottom edge */
+    right: 30px; /* Comfortable position from right */
+    border-radius: 10px; /* Subtle rounded corners */
+  }
+  .chat-footer{
+    position: relative;
+    justify-content: end;
+    height: 36px;
+    bottom: -102px;
   }
   #send-btn{
     padding: 5px 20px;
